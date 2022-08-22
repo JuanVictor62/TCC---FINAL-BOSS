@@ -1,48 +1,56 @@
-.f1-landingpage{
+.f1 {
     background-image: url('../../../public/assets/imgs/fundo1LP.png');
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: 108.5%;
     background-position-y: -1em;
+    height: 40em;
 
-    .f1-cabecalho{
+    .f1-cabecalho {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
 
-        .f1-cab1{
+        .f1-cab1 {
             display: flex;
             flex-direction: row;
 
             margin-top: 3em;
-            margin-left: 3em;
+            margin-left: 1em;
+            padding: 1em;
 
             font-family: 'caviar';
 
-            .f1-cab1-dc1{
+            .f1-cab1-dc1 {
                 margin-top: 0.5em;
                 color: #fff;
 
             }
-            .f1-cab1-img1{
+
+            .f1-cab1-img1 {
                 height: 2em;
-                margin-left: 1.5em;
+                margin-left: .5em;
+                padding-top: 3px;
+                color: white;
             }
 
-            .f1-cab1-img2{
+            .f1-cab1-img2 {
                 height: 2em;
                 margin-left: 1.5em;
             }
         }
 
-        .f1-cab2{
-            width: 30em;
-            margin-right: 13em;
-            .f1-cab2-img{
-                margin-left: 10em;
+        .f1-cab2 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .f1-cab2-img {
+                width: 126px;
+                height: 134px;
             }
 
-            .f1-cab2-1{
+            .f1-cab2-1 {
                 margin-top: 1em;
                 display: flex;
                 flex-direction: row;
@@ -51,18 +59,68 @@
                 color: #fff;
                 font-family: 'inter';
             }
+
+            .f1-cab2-1-1:hover, .f1-cab2-1-2:hover, .f1-cab2-1-3:hover, .f1-cab2-1-4:hover {
+                color: #ffffff;
+                cursor: pointer;
+
+
+                background-position-x: center;
+                background-size: 100% 100%;
+                transition: .6s;
+            }
+
+            .f1-cab2-1-1,
+            .f1-cab2-1-2,
+            .f1-cab2-1-3,
+            .f1-cab2-1-4 {
+                margin-left: 1em;
+                margin-right: 1em;
+
+                background-image: linear-gradient(transparent, transparent 95%, #ffffff 0, #ffffff);
+                background-position-x: center;
+                background-repeat: no-repeat;
+                background-size: 0 100%;
+                color: #ffffff;
+                font-family: 'caviar';
+                transition: background-size .6s;
+
+            }
+
+
+            .f1-cab2-0-5 {
+                display: flex;
+                justify-content: center;
+
+            }
+
         }
 
-        .f1-cab3{
+
+        .f1-cab3 {
             color: #fff;
-            margin-right: 3em;
+            margin-right: 1em;
             margin-top: 3em;
+            display: flex;
+            flex-direction: row;
 
             font-family: 'caviar';
+
+            .f1-cab1-img2 {
+                height: 2em;
+                margin-left: 1.5em;
+            }
+
+            .f1-cab3-login {
+                margin-left: 2em;
+            }
         }
 
     }
-    .f1-desc1{
+
+
+
+    .f1-desc1 {
         display: flex;
         flex-direction: column;
 
@@ -72,22 +130,85 @@
         margin-top: 13em;
         margin-left: 3em;
 
-        .f1-desc1-dc1{
+        .f1-desc1-dc1 {
             font-size: 3em;
         }
-        
-        
-        .f1-desc1-1{
+
+
+        .f1-desc1-1 {
             display: flex;
             flex-direction: row;
-            
+
         }
 
-        .f1-desc1-img1{
+        .f1-desc1-img1 {
             height: 4em;
             margin-left: 1em;
         }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .f1-desc1-img1 {
+                animation: App-logo-spin infinite 40s linear;
+            }
+
+            @keyframes App-logo-spin {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    
+
+
+    .f2-background {
+        background-image: url('../../../public/assets/imgs/PUSH1_Fall_For_You_US_July_DI3 1.png');
     }
 
+}
 
+.f2 {
+    background-image: url('../../../public/assets/imgs/PUSH1_Fall_For_You_US_July_DI3 1.png');
+    background-repeat: no-repeat;
+    background-size: 108.5%;
+    background-position-y: -1em;
+    height: 47em;
+
+    display: flex;
+    align-items: flex-end;
+
+    .f2-cab1 {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .f2-cab1-novidades {
+        font-family: 'inter';
+        font-size: 4em;
+        color: white;
+    }
+
+    .f2-cab1-colecao {
+        font-family: 'caviar';
+        font-size: 1em;
+        color: white;
+    }
+
+    .f2-cab1-lancamento {
+        font-family: 'inter';
+        font-size: 4em;
+        color: white;
+    }
+
+    .f2-cab1-data {
+        font-family: 'inter';
+        font-size: 4em;
+        color: white;
+        margin-bottom: 1em;
+    }
 }
